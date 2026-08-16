@@ -9,7 +9,9 @@
 1. Claude Code / Cowork でこのリポジトリを開く
 2. 「〇〇（プロダクト）の LP を作りたい」と伝える
    → `lp-create` スキルが起動し、パターン選択から公開前チェックまで案内される
-3. プレビュー: `python3 -m http.server 8000` → http://localhost:8000/lp/
+3. プレビュー:
+   - 公開版（`main`）: https://thiramatsu-dw.github.io/digitalworks-Cowork/lp/
+   - ローカル: `python3 -m http.server 8000` → http://localhost:8000/lp/
 
 ## 構造
 

@@ -10,10 +10,14 @@ LP を制作するためのルール。
 2. **スキルの自動読み込みを確認** — リポジトリ直下の `CLAUDE.md` と
    `.claude/skills/lp-create/` はセッション開始時に自動で読み込まれる。
    「LP を作りたい」と伝えれば `lp-create` スキルに沿って進行する。
-3. **プレビュー方法** — ビルド不要の静的 HTML なので、いずれかで確認する:
-   - ローカル: リポジトリ直下で `python3 -m http.server 8000` →
+3. **プレビュー方法** — ビルド不要の静的 HTML なので、状況に応じて使い分ける:
+   - **公開プレビュー（正式・共有用）**: `main` にマージされた LP は GitHub Pages で
+     公開される → **https://thiramatsu-dw.github.io/digitalworks-Cowork/lp/**
+     （`.github/workflows/deploy-pages.yml` が `main` への push で自動デプロイ）
+   - 制作中（リモートセッション）: Claude にスクリーンショットを依頼する
+     （Playwright + Chromium が利用可能。PC 幅 + モバイル幅の 2 枚を基本とする）
+   - 制作中（手元の PC）: リポジトリ直下で `python3 -m http.server 8000` →
      `http://localhost:8000/lp/` を開く
-   - Claude にスクリーンショットを依頼する（Playwright + Chromium が利用可能）
 
 ## 2. ディレクトリと命名規則
 

@@ -21,5 +21,6 @@
 
 ## プレビュー
 
-`python3 -m http.server 8000` → `http://localhost:8000/lp/`
-スクリーンショット確認には Playwright + Chromium（`/opt/pw-browsers/chromium`）が使える。
+- 公開版（`main` マージ後）: https://thiramatsu-dw.github.io/digitalworks-Cowork/lp/（GitHub Pages 自動デプロイ）
+- ローカル: `python3 -m http.server 8000` → `http://localhost:8000/lp/`
+- スクリーンショット確認には Playwright + Chromium（`/opt/pw-browsers/chromium`）が使える。
