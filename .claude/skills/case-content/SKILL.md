@@ -18,8 +18,10 @@ description: 導入事例コンテンツの管理・制作を行うときに必�
    許諾ステータス（case.md のメタ情報）に反する表記を一切書かない。
 3. **事実性** — 数値・成果は素材（inbox の出典）に基づく。誇大表現・
    未計測の実績値・架空の声を書かない（lp-create スキルの共通ルール 7 と同じ）。
-4. **一覧の二重更新** — 事例の追加・ステータス変更時は
-   `cases/README.md` の一覧表と `cases/index.html` のカタログを必ず両方更新する。
+4. **一覧の三点更新** — 事例の追加・変更時は次の 3 つを必ず揃えて更新する:
+   `cases/README.md` の一覧表（人が読む正本）、`cases/index.html`（カタログ）、
+   `cases/index.json`（検索用インデックス。タグ・成果・Board 案件番号を持つ）。
+   「◯◯な事例を探して」と依頼されたら index.json のタグ・results から検索する。
 
 ## ディレクトリ構造（正）
 
@@ -27,6 +29,7 @@ description: 導入事例コンテンツの管理・制作を行うときに必�
 cases/
 ├── README.md                   # 事例一覧の正本 + 運用ルール
 ├── index.html                  # 事例カタログ（GitHub Pages で公開される一覧）
+├── index.json                  # 検索用インデックス（タグ・成果・Board 案件番号）
 ├── _template/                  # 新規事例の雛形（case.md / inbox/README.md）
 └── cNNN-<slug>/                # 事例プロジェクトフォルダ
     ├── case.md                 # 事例の正本
@@ -51,7 +54,8 @@ cases/
    不明なら「未申請」として扱い匿名表記にする）。対応する Board 案件があれば
    **Board 案件番号**（数値 ID のみ）を記録する（下記「Board との紐付け」参照）。
 3. `cases/README.md` の一覧表に 1 行追記、`cases/index.html` にカードを追記
-   （ステータスバッジ: collect / drafted / ready / live）。
+   （ステータスバッジ: collect / drafted / ready / live）、`cases/index.json` に
+   エントリを追加（tags は既存事例の語彙に揃える。新語彙の乱立を避ける）。
 
 ### B. 素材を追加する（随時）
 
@@ -68,7 +72,7 @@ cases/
 3. 「媒体別の要点」に、見出し候補（数値ハイライト）と媒体ごとに立てる要素を決める。
 4. ステータスを「正本化済」に更新。掲載許諾とレビューが揃ったら「公開可」へ
    （文言のプロダクトオーナー承認ルールは docs/operations.md §4 に従う）。
-5. 一覧（README.md の表 + index.html のバッジ）を更新。
+5. 一覧 3 点（README.md の表 + index.html のバッジ + index.json）を更新。
 
 ### D. アウトプットを生成する（case.md → outputs/）
 
@@ -119,6 +123,7 @@ cases/
 - [ ] Board の API キー/トークン、案件名・金額等の商談情報がどのファイルにも無い
       （書けるのは案件番号のみ）
 - [ ] 数値・成果が inbox の素材と矛盾していない
-- [ ] `cases/README.md` の一覧表と `cases/index.html` の両方を更新した
+- [ ] `cases/README.md` の一覧表・`cases/index.html`・`cases/index.json` の 3 点を更新した
+      （index.json は `jq . cases/index.json` で構文チェック）
 - [ ] HTML アウトプットは lp-create の checklist.md 該当項目（レスポンシブ・
       alt・コントラスト）を満たす

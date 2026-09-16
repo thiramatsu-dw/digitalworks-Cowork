@@ -1,0 +1,215 @@
+{
+  "_readme": "事例の検索・整理用インデックス。正本は各 cases/cNNN-<slug>/case.md。事例の追加・変更時は README.md の表・index.html と合わせてこのファイルも必ず更新する（case-content スキル参照）。tags は検索用の統制語彙: industry(業種), use_case(自動化した業務), feature(導入の特徴), persona(導入体制・担当者像)。",
+  "updated": "2026-09-16",
+  "cases": [
+    {
+      "id": "c001",
+      "path": "c001-listing-plus",
+      "company": "株式会社リスティングプラス",
+      "product": "raqubo",
+      "board_project_no": 1031,
+      "status": "掲載中",
+      "consent": "実名許諾済",
+      "published": "2021-02-10",
+      "source_url": "https://digi-works.co.jp/blog/works/4420/",
+      "headline": "現場に点在するルーティン業務を RPA 化し 40 時間超の工数削減",
+      "results": ["工数 40 時間超削減", "アウトソース費のコスト削減"],
+      "tags": {
+        "industry": ["ウェブマーケ支援", "広告代理店"],
+        "use_case": ["CSV ダウンロード", "請求書の一覧化", "レポート作成", "基幹システム転記"],
+        "feature": ["業務整理からの伴走", "アウトソース代替"],
+        "persona": ["事業部主導"]
+      }
+    },
+    {
+      "id": "c002",
+      "path": "c002-gohako",
+      "company": "株式会社五箱",
+      "product": "raqubo",
+      "board_project_no": 1018,
+      "status": "掲載中",
+      "consent": "実名許諾済",
+      "published": "2021-02-18",
+      "source_url": "https://digi-works.co.jp/blog/works/4462/",
+      "headline": "毎月の経理請求作業を RPA 化し月 15 時間を捻出",
+      "results": ["月 15 時間削減", "残業削減・モチベーション向上"],
+      "tags": {
+        "industry": ["ウェブマーケ支援", "広告代理店"],
+        "use_case": ["請求業務", "CSV ダウンロード"],
+        "feature": ["導入スピード", "課題理解の速さ"],
+        "persona": ["経営者主導"]
+      }
+    },
+    {
+      "id": "c003",
+      "path": "c003-ubun",
+      "company": "株式会社ウブン",
+      "product": "raqubo",
+      "board_project_no": 1055,
+      "status": "掲載中",
+      "consent": "実名許諾済",
+      "published": "2021-02-24",
+      "source_url": "https://digi-works.co.jp/blog/works/4431/",
+      "headline": "数万点の目視モニタリングを RPA 化しコンサル時間を創出",
+      "results": ["夜間稼働で数万点を監視", "人より低コスト", "コンサル時間の創出"],
+      "tags": {
+        "industry": ["EC 支援", "Amazon"],
+        "use_case": ["モニタリング", "転記", "情報収集"],
+        "feature": ["夜間稼働", "BPO 併用"],
+        "persona": ["経営者主導"]
+      }
+    },
+    {
+      "id": "c004",
+      "path": "c004-agriholdings",
+      "company": "アグリホールディングス株式会社",
+      "product": "raqubo",
+      "board_project_no": 1059,
+      "status": "掲載中",
+      "consent": "実名許諾済",
+      "published": "2021-03-01",
+      "source_url": "https://digi-works.co.jp/blog/works/4468/",
+      "headline": "未経験インターンが 1 週間で RPA 開発、アルバイト業務を自動化",
+      "results": ["未経験者が 1 週間で開発", "生産性大幅アップ"],
+      "tags": {
+        "industry": ["人材"],
+        "use_case": ["求人情報の収集・一覧化"],
+        "feature": ["現場主導", "教育・育成", "シンプル UI"],
+        "persona": ["インターン・初心者"]
+      }
+    },
+    {
+      "id": "c005",
+      "path": "c005-lifestyle-innovation",
+      "company": "株式会社Life style innovation",
+      "product": "raqubo",
+      "board_project_no": 1080,
+      "status": "掲載中",
+      "consent": "実名許諾済",
+      "published": "2021-03-10",
+      "source_url": "https://digi-works.co.jp/blog/works/4473/",
+      "headline": "労働集約業務を RPA 化し業績 200% UP",
+      "results": ["業績 200% UP", "1 ヶ月で人の介在 99% 不要"],
+      "tags": {
+        "industry": ["ウェブマーケ支援", "広告代理店"],
+        "use_case": ["データ集計", "レポート作成"],
+        "feature": ["シナリオ作成委託", "動画で業務共有", "地方・リモート"],
+        "persona": ["経営者主導", "エンジニア不在"]
+      }
+    },
+    {
+      "id": "c006",
+      "path": "c006-so-technologies",
+      "company": "SO Technologies株式会社",
+      "product": "raqubo",
+      "board_project_no": 1057,
+      "status": "掲載中",
+      "consent": "実名許諾済",
+      "published": "2021-06-21",
+      "source_url": "https://digi-works.co.jp/blog/works/4608/",
+      "headline": "月間 200 時間削減とメンバー 30 人の自動化リテラシー向上",
+      "results": ["月 200 時間削減", "シナリオ 28 本", "現場主導の改善体質へ"],
+      "tags": {
+        "industry": ["デジタル集客支援", "広告代理店"],
+        "use_case": ["API 非対応媒体のレポーティング", "広告運用"],
+        "feature": ["組織展開", "業務標準化", "デスクトップ型", "低価格"],
+        "persona": ["オペレーション部門", "30 名規模"]
+      }
+    },
+    {
+      "id": "c007",
+      "path": "c007-f-code",
+      "company": "株式会社エフコード",
+      "product": "raqubo",
+      "board_project_no": 1084,
+      "status": "掲載中",
+      "consent": "実名許諾済",
+      "published": "2021-09-10",
+      "source_url": "https://digi-works.co.jp/blog/works/4707/",
+      "headline": "レポート作成を RPA 化し毎日 3 時間削減とミスゼロ化",
+      "results": ["毎日 3 時間削減", "ミス削減", "作業ストレス軽減"],
+      "tags": {
+        "industry": ["SaaS", "CX/DX 支援"],
+        "use_case": ["レポート作成", "画面キャプチャ", "API 非対応媒体のレポーティング"],
+        "feature": ["無料トライアル", "デスクトップ型", "現場主導"],
+        "persona": ["事業部主導", "エンジニアに頼れない現場"]
+      }
+    },
+    {
+      "id": "c008",
+      "path": "c008-dm-solutions",
+      "company": "ディーエムソリューションズ株式会社",
+      "product": "raqubo",
+      "board_project_no": 1167,
+      "status": "掲載中",
+      "consent": "実名許諾済",
+      "published": "2022-07-12",
+      "source_url": "https://digi-works.co.jp/blog/works/4772/",
+      "headline": "RPA 初心者 2 名がサポート活用で月 40 時間削減",
+      "results": ["月 40 時間削減", "他チーム業務の巻き取り", "休祝日データ取得の自動化"],
+      "tags": {
+        "industry": ["メディア", "ダイレクトマーケティング"],
+        "use_case": ["売上・広告費集計", "請求業務", "スプレッドシート転記"],
+        "feature": ["CS 伴走", "トライアル", "初心者向け操作性"],
+        "persona": ["初心者", "少人数チーム", "エンジニア不在"]
+      }
+    },
+    {
+      "id": "c009",
+      "path": "c009-nexuscard",
+      "company": "Nexus Card株式会社",
+      "product": "raqubo",
+      "board_project_no": 1289,
+      "status": "掲載中",
+      "consent": "実名許諾済",
+      "published": "2023-02-02",
+      "source_url": "https://digi-works.co.jp/blog/works/4816/",
+      "headline": "セキュアなオフライン環境（閉域網）でも RPA で月最大 50 時間削減",
+      "results": ["月最大 50 時間削減", "毎朝の集計を全自動化"],
+      "tags": {
+        "industry": ["金融", "クレジットカード"],
+        "use_case": ["申込情報の集計", "SQL データ抽出", "ファイル移動", "売上情報の加工"],
+        "feature": ["オフライン対応", "閉域網", "セキュリティ要件", "社内教育"],
+        "persona": ["一般社員", "非エンジニア"]
+      }
+    },
+    {
+      "id": "c010",
+      "path": "c010-zenken",
+      "company": "Zenken株式会社",
+      "product": "raqubo",
+      "board_project_no": 1399,
+      "status": "掲載中",
+      "consent": "実名許諾済",
+      "published": "2024-08-01",
+      "source_url": "https://digi-works.co.jp/blog/works/7882/",
+      "headline": "アタックリスト作成を RPA 化し 3 人月分を捻出",
+      "results": ["3 人月分の工数捻出", "PC 2 台で 1 日 12 時間稼働", "顧客と向き合う時間が増加"],
+      "tags": {
+        "industry": ["人材", "海外人材紹介"],
+        "use_case": ["アタックリスト作成", "メールアドレスチェック", "システム入力"],
+        "feature": ["夜間稼働", "プロトタイプ提供", "サポート込み料金", "個人情報管理"],
+        "persona": ["営業部門", "エンジニア不在"]
+      }
+    },
+    {
+      "id": "c011",
+      "path": "c011-canal",
+      "company": "株式会社キャナル",
+      "product": "raqubo",
+      "board_project_no": 1090,
+      "status": "掲載中",
+      "consent": "実名許諾済",
+      "published": "2024-10-16",
+      "source_url": "https://digi-works.co.jp/blog/works/9429/",
+      "headline": "エンジニア主導の RPA 活用で月間 200 時間削減とゼロミスを実現",
+      "results": ["月 200 時間削減", "ゼロミス", "毎時レポートの自動化"],
+      "tags": {
+        "industry": ["広告代理店"],
+        "use_case": ["データ抽出・加工", "レポート作成", "レポート共有"],
+        "feature": ["エンジニア主導", "カスタマイズ性", "夜間・休日稼働", "マニュアル自走"],
+        "persona": ["社内エンジニア", "少数精鋭 20 名"]
+      }
+    }
+  ]
+}

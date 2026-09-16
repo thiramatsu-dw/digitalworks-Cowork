@@ -13,6 +13,7 @@
 cases/
 ├── README.md                   # このファイル（事例一覧の正本。事例追加時に必ず更新）
 ├── index.html                  # 事例カタログ（ブラウザ / GitHub Pages で見る一覧）
+├── index.json                  # 検索用インデックス（タグ・成果・Board 案件番号。同時更新）
 ├── _template/                  # 新規事例フォルダの雛形
 └── cNNN-<slug>/                # 事例プロジェクトフォルダ（連番 + 英小文字ケバブ）
     ├── case.md                 # 事例の正本（メタ情報 + 構造化された事例内容）
@@ -48,16 +49,19 @@ cases/
 
 | ID | 事例名（表記） | プロダクト | Board 案件No. | 業種・規模 | ステータス | 許諾 | 主な成果 |
 |---|---|---|---|---|---|---|---|
-| [c001](c001-listing-plus/case.md) | 株式会社リスティングプラス | raqubo | — | ウェブマーケ支援 | 掲載中 | 実名許諾済 | ルーティン業務 40 時間超削減 |
-| [c002](c002-gohako/case.md) | 株式会社五箱 | raqubo | — | ウェブマーケ支援 | 掲載中 | 実名許諾済 | 請求作業を月 15 時間削減 |
-| [c003](c003-ubun/case.md) | 株式会社ウブン | raqubo | — | Amazon 支援 | 掲載中 | 実名許諾済 | 数万点の目視監視を夜間自動化 |
-| [c004](c004-agriholdings/case.md) | アグリホールディングス株式会社 | raqubo | — | 人材事業 | 掲載中 | 実名許諾済 | 未経験インターンが 1 週間で開発 |
-| [c005](c005-lifestyle-innovation/case.md) | 株式会社Life style innovation | raqubo | — | ウェブマーケ支援 | 掲載中 | 実名許諾済 | 業績 200% UP・1 ヶ月で完全自動化 |
-| [c006](c006-so-technologies/case.md) | SO Technologies株式会社 | raqubo | — | デジタル集客支援 | 掲載中 | 実名許諾済 | 月 200 時間削減・30 人の体質変革 |
-| [c007](c007-f-code/case.md) | 株式会社エフコード | raqubo | — | CX/DX 支援 SaaS | 掲載中 | 実名許諾済 | レポート作成を毎日 3 時間削減 |
-| [c008](c008-dm-solutions/case.md) | ディーエムソリューションズ株式会社 | raqubo | — | DM・メディア事業 | 掲載中 | 実名許諾済 | 初心者 2 名で月 40 時間削減 |
-| [c009](c009-nexuscard/case.md) | Nexus Card株式会社 | raqubo | — | クレジットカード | 掲載中 | 実名許諾済 | 閉域網オフラインで月最大 50 時間削減 |
-| [c010](c010-zenken/case.md) | Zenken株式会社 | raqubo | — | 海外人材紹介 | 掲載中 | 実名許諾済 | アタックリスト作成で 3 人月分捻出 |
-| [c011](c011-canal/case.md) | 株式会社キャナル | raqubo | — | 広告代理業ほか | 掲載中 | 実名許諾済 | 月 200 時間削減とゼロミス |
+| [c001](c001-listing-plus/case.md) | 株式会社リスティングプラス | raqubo | 1031 | ウェブマーケ支援 | 掲載中 | 実名許諾済 | ルーティン業務 40 時間超削減 |
+| [c002](c002-gohako/case.md) | 株式会社五箱 | raqubo | 1018 | ウェブマーケ支援 | 掲載中 | 実名許諾済 | 請求作業を月 15 時間削減 |
+| [c003](c003-ubun/case.md) | 株式会社ウブン | raqubo | 1055 | Amazon 支援 | 掲載中 | 実名許諾済 | 数万点の目視監視を夜間自動化 |
+| [c004](c004-agriholdings/case.md) | アグリホールディングス株式会社 | raqubo | 1059 | 人材事業 | 掲載中 | 実名許諾済 | 未経験インターンが 1 週間で開発 |
+| [c005](c005-lifestyle-innovation/case.md) | 株式会社Life style innovation | raqubo | 1080 | ウェブマーケ支援 | 掲載中 | 実名許諾済 | 業績 200% UP・1 ヶ月で完全自動化 |
+| [c006](c006-so-technologies/case.md) | SO Technologies株式会社 | raqubo | 1057 | デジタル集客支援 | 掲載中 | 実名許諾済 | 月 200 時間削減・30 人の体質変革 |
+| [c007](c007-f-code/case.md) | 株式会社エフコード | raqubo | 1084 | CX/DX 支援 SaaS | 掲載中 | 実名許諾済 | レポート作成を毎日 3 時間削減 |
+| [c008](c008-dm-solutions/case.md) | ディーエムソリューションズ株式会社 | raqubo | 1167 | DM・メディア事業 | 掲載中 | 実名許諾済 | 初心者 2 名で月 40 時間削減 |
+| [c009](c009-nexuscard/case.md) | Nexus Card株式会社 | raqubo | 1289 | クレジットカード | 掲載中 | 実名許諾済 | 閉域網オフラインで月最大 50 時間削減 |
+| [c010](c010-zenken/case.md) | Zenken株式会社 | raqubo | 1399 | 海外人材紹介 | 掲載中 | 実名許諾済 | アタックリスト作成で 3 人月分捻出 |
+| [c011](c011-canal/case.md) | 株式会社キャナル | raqubo | 1090 | 広告代理業ほか | 掲載中 | 実名許諾済 | 月 200 時間削減とゼロミス |
 
-<!-- 事例を追加したらこの表に 1 行追記し、cases/index.html にもカードを追加する -->
+タグ（業種・自動化した業務・導入の特徴・担当者像）での検索は `index.json` を使う。
+「◯◯な事例を探して」と Claude に伝えれば index.json から検索して提示する。
+
+<!-- 事例を追加したらこの表に 1 行追記し、cases/index.html と cases/index.json も更新する -->
