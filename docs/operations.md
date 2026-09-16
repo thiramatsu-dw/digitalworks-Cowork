@@ -98,6 +98,10 @@ lp/<product>/lp00N[-x]/index.html
 手順の詳細・媒体別の規範は `.claude/skills/case-content/SKILL.md` に従う。
 「事例を追加したい」と Claude に伝えればこのスキルに沿って進行する。
 
+事例は案件管理システム Board の案件と紐づく（case.md に案件番号を記録）。
+案件情報の取得は `scripts/board/`（セットアップは `scripts/board/README.md`）。
+API 認証情報は `.env`（gitignore 済み）または環境変数のみで扱い、コミット禁止。
+
 ## 9. 新プロダクト追加の手順
 
 1. `lp/<product>/README.md` を作る（訴求正本。lp/workmonitor/README.md を雛形に）

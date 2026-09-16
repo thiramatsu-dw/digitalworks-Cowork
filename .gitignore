@@ -1,0 +1,4 @@
+# 認証情報（絶対にコミットしない。このリポジトリは public）
+.env
+.env.*
+!.env.example
