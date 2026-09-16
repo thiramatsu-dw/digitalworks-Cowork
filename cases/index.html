@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>導入事例カタログ｜digitalworks-Cowork</title>
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+    color: #182338; line-height: 1.8; background: #f7f9fd; padding: 48px 20px;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  h1 { font-size: 26px; font-weight: 800; margin-bottom: 6px; }
+  .sub { color: #5a6478; font-size: 14px; margin-bottom: 36px; }
+  h2 { font-size: 15px; font-weight: 800; letter-spacing: 0.08em; color: #14306e; margin: 30px 0 12px; text-transform: uppercase; }
+  .card {
+    display: block; background: #fff; border: 1px solid #e4e9f2; border-radius: 14px;
+    padding: 18px 22px; margin-bottom: 12px; text-decoration: none; color: inherit;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+  }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 12px 28px -14px rgba(11, 29, 69, 0.3); }
+  .card .name { font-weight: 800; font-size: 16px; }
+  .card .meta { display: block; font-size: 12.5px; color: #5a6478; margin-top: 2px; }
+  .badge {
+    display: inline-block; font-size: 11px; font-weight: 700; border-radius: 999px;
+    padding: 2px 10px; margin-left: 8px; vertical-align: 2px;
+  }
+  .badge.collect { color: #6b7280; background: #eef1f6; }   /* 素材収集中 */
+  .badge.drafted { color: #b45309; background: #fff7e8; }   /* 正本化済 */
+  .badge.ready   { color: #047857; background: #e8faf1; }   /* 公開可 */
+  .badge.live    { color: #1d4ed8; background: #e9f0ff; }   /* 掲載中 */
+  .empty {
+    background: #fff; border: 1px dashed #c9d3e4; border-radius: 14px;
+    padding: 24px 22px; color: #5a6478; font-size: 14px;
+  }
+  .links { margin-top: 32px; font-size: 13px; color: #5a6478; }
+  .links a { color: #14306e; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>導入事例カタログ</h1>
+  <p class="sub">このリポジトリで管理している導入事例の一覧。事例を追加したら必ずここと cases/README.md の一覧表に追記する。</p>
+
+  <p class="empty">まだ事例が登録されていません。<code>case-content</code> スキルの手順（cases/README.md 参照）で追加してください。</p>
+
+  <!-- 事例を追加したら上の .empty を消し、プロダクト毎の h2 の下にカードを追記する。
+       ステータスバッジ: collect=素材収集中 / drafted=正本化済 / ready=公開可 / live=掲載中
+  <h2>WorkMonitor</h2>
+  <a class="card" href="c001-example/outputs/web/index.html">
+    <span class="name">c001 — 製造業・従業員300名<span class="badge live">掲載中</span></span>
+    <span class="meta">残業時間を月平均12%削減｜Web / スライド / LPパーツ</span>
+  </a>
+  -->
+
+  <p class="links"><a href="../lp/index.html">LP カタログへ</a>　·　運用ルール: cases/README.md</p>
+</div>
+</body>
+</html>

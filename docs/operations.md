@@ -30,11 +30,16 @@ lp/<product>/lp00N[-x]/index.html
 - `-b`, `-c` …: 同じ訴求のデザインバリアント（A/B テスト用）。元 LP は消さない
 - 画像は `lp/<product>/assets/` に置き、LP からは `../assets/...` で相対参照
 - パターンは `patterns/pNNN-<slug>/`（連番 + 英小文字ケバブケース）
+- 導入事例は `cases/cNNN-<slug>/`（全プロダクト通し連番 + 英小文字ケバブケース。
+  未許諾の実名を slug に使わない。詳細は `.claude/skills/case-content/SKILL.md`）
 
 ## 3. ブランチ・コミット運用
 
-- **1 LP（または 1 パターン）= 1 ブランチ = 1 PR** を基本とする
-  - ブランチ名: `lp/<product>-lp00N` / `pattern/pNNN-<slug>` / `docs/<topic>`
+- **1 LP（または 1 パターン・1 事例）= 1 ブランチ = 1 PR** を基本とする
+  - ブランチ名: `lp/<product>-lp00N` / `pattern/pNNN-<slug>` /
+    `case/cNNN-<slug>` / `docs/<topic>`
+  - 例外: 事例の**素材追加（inbox への追記のみ）**は軽量な作業のため、
+    同じ事例の作業ブランチに随時積んで良い
 - `main`（デフォルトブランチ）へは PR 経由でマージする。直接 push しない
 - 同じ LP を複数人で同時に編集しない（1 ファイル完結のためコンフリクトが
   解消しづらい）。着手時に PR をドラフトで先に立てて「作業中」を可視化する
@@ -64,6 +69,11 @@ lp/<product>/lp00N[-x]/index.html
 - 未公開の価格・顧客名・商談情報
 - API キー・認証情報
 
+導入事例は例外的に顧客情報を扱うが、**掲載許諾済みの範囲のみ**書ける。
+許諾前の素材は匿名化（業種・規模表記）してから `cases/*/inbox/` に置く。
+詳細な許諾ステータスの運用は `cases/README.md` と
+`.claude/skills/case-content/SKILL.md` に従う。
+
 内部戦略まで含む詳細なメッセージ基盤ドキュメントは、各プロダクトの
 プライベートリポジトリ側（例: WorkMonitor-dev の `docs/marketing/`）で管理し、
 このリポジトリには**外部公開可能なサマリのみ**を置く。
@@ -76,7 +86,19 @@ lp/<product>/lp00N[-x]/index.html
 3. 次のプロダクトの LP は、カタログからパターンを選んで短時間で立ち上げる
 4. パターンの改良は参照実装の更新 + PATTERN.md への追記で行う
 
-## 8. 新プロダクト追加の手順
+## 8. 事例コンテンツの運用サイクル
+
+1. 事例フォルダを作る（`cases/_template/` から `cases/cNNN-<slug>/`）
+2. 素材を随時 `inbox/` にアップする（許諾前の実名は匿名化してから）
+3. 素材が溜まったら `case.md` に**正本化**（構造化・書き起こし）
+4. 掲載許諾 + レビューが揃ったら媒体別アウトプットを生成
+   （Web ページ / セールススライド / LP 組み込みパーツ）
+5. 事例一覧（`cases/README.md` の表 + `cases/index.html`）を毎回更新
+
+手順の詳細・媒体別の規範は `.claude/skills/case-content/SKILL.md` に従う。
+「事例を追加したい」と Claude に伝えればこのスキルに沿って進行する。
+
+## 9. 新プロダクト追加の手順
 
 1. `lp/<product>/README.md` を作る（訴求正本。lp/workmonitor/README.md を雛形に）
 2. `lp/<product>/assets/` にスクリーンショット等を配置
