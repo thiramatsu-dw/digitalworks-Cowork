@@ -48,6 +48,16 @@ cases/
 
 | ID | 事例名（表記） | プロダクト | Board 案件No. | 業種・規模 | ステータス | 許諾 | 主な成果 |
 |---|---|---|---|---|---|---|---|
-| — | （まだ事例なし。`case-content` スキルの手順で追加する） | | | | | | |
+| [c001](c001-listing-plus/case.md) | 株式会社リスティングプラス | raqubo | — | ウェブマーケ支援 | 掲載中 | 実名許諾済 | ルーティン業務 40 時間超削減 |
+| [c002](c002-gohako/case.md) | 株式会社五箱 | raqubo | — | ウェブマーケ支援 | 掲載中 | 実名許諾済 | 請求作業を月 15 時間削減 |
+| [c003](c003-ubun/case.md) | 株式会社ウブン | raqubo | — | Amazon 支援 | 掲載中 | 実名許諾済 | 数万点の目視監視を夜間自動化 |
+| [c004](c004-agriholdings/case.md) | アグリホールディングス株式会社 | raqubo | — | 人材事業 | 掲載中 | 実名許諾済 | 未経験インターンが 1 週間で開発 |
+| [c005](c005-lifestyle-innovation/case.md) | 株式会社Life style innovation | raqubo | — | ウェブマーケ支援 | 掲載中 | 実名許諾済 | 業績 200% UP・1 ヶ月で完全自動化 |
+| [c006](c006-so-technologies/case.md) | SO Technologies株式会社 | raqubo | — | デジタル集客支援 | 掲載中 | 実名許諾済 | 月 200 時間削減・30 人の体質変革 |
+| [c007](c007-f-code/case.md) | 株式会社エフコード | raqubo | — | CX/DX 支援 SaaS | 掲載中 | 実名許諾済 | レポート作成を毎日 3 時間削減 |
+| [c008](c008-dm-solutions/case.md) | ディーエムソリューションズ株式会社 | raqubo | — | DM・メディア事業 | 掲載中 | 実名許諾済 | 初心者 2 名で月 40 時間削減 |
+| [c009](c009-nexuscard/case.md) | Nexus Card株式会社 | raqubo | — | クレジットカード | 掲載中 | 実名許諾済 | 閉域網オフラインで月最大 50 時間削減 |
+| [c010](c010-zenken/case.md) | Zenken株式会社 | raqubo | — | 海外人材紹介 | 掲載中 | 実名許諾済 | アタックリスト作成で 3 人月分捻出 |
+| [c011](c011-canal/case.md) | 株式会社キャナル | raqubo | — | 広告代理業ほか | 掲載中 | 実名許諾済 | 月 200 時間削減とゼロミス |
 
 <!-- 事例を追加したらこの表に 1 行追記し、cases/index.html にもカードを追加する -->
